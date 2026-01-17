@@ -1,0 +1,28 @@
+@use '../base/index' as *
+
+.btn
+	width: 310px
+	justify-content: center
+	padding: 23px
+	font-weight: 600
+	font-size: 20px
+	color: $mainBtnsColor
+	border-radius: 50px
+	background: $mainBtnsBg
+	backdrop-filter: blur(4px)
+	border: 1px solid $mainBorder
+	@media( max-width: 480px)
+		font-size: 18px
+	@media( max-width: 425px)
+		padding: 18.4px
+		width: 212px
+		font-size: 16px
+	&_call
+		background: transparent
+	&_contacts
+		padding: 23.5px
+		width: 381px
+		@media( max-width: 1250px)
+			width: 100%
+		@media( max-width: 425px)
+			padding: 19px

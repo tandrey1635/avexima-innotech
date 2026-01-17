@@ -1,0 +1,76 @@
+@use '../base/index' as *
+
+.title
+	font-weight: 600
+	font-size: 48px
+	@media( max-width: 1400px)
+		text-align: center
+	@media( max-width: 576px)
+		font-size: 36px
+	@media( max-width: 480px)
+		font-size: 32px
+	@media( max-width: 425px)
+		text-align: left
+		font-size: 28px
+	&_main
+		font-size: 60px
+		@media( max-width: 1400px)
+			text-align: left
+		@media( max-width: 991px)
+			font-size: 56px
+		@media( max-width: 768px)
+			font-size: 48px
+		@media( max-width: 676px)
+			font-size: 42px
+		@media( max-width: 425px)
+			font-size: 36px
+		@media( max-width: 375px)
+			font-size: 32px
+	&_second
+		color: $secondColor
+
+.subtitle
+	font-weight: 600
+	font-size: 32px
+	@media( max-width: 1700px)
+		font-size: 26px
+	@media( max-width: 425px)
+		font-size: 20px
+	&_second
+		color: $secondColor
+	&_about
+		@media( max-width: 480px)
+			text-align: center
+		@media( max-width: 375px)
+			text-align: left
+	&_activity
+		font-size: 20px
+		line-height: 121%
+		@media( max-width: 425px)
+			font-size: 16px
+		@media( max-width: 375px)
+			font-size: 14px
+		&_main
+			@media( max-width: 1400px)
+				text-align: center
+			@media( max-width: 425px)
+				text-align: left
+	&_scientific, &_contacts
+		@media( max-width: 1400px)
+			text-align: center
+			font-size: 48px
+		@media( max-width: 576px)
+			font-size: 36px
+		@media( max-width: 480px)
+			font-size: 32px
+		@media( max-width: 425px)
+			text-align: left
+			font-size: 28px
+	&_news
+		min-height: 160px
+		@media( max-width: 1400px)
+			min-height: 140px
+		@media( max-width: 1200px)
+			min-height: auto
+	&_contacts
+		@media( max-width: 1250px)

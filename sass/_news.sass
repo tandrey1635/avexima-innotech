@@ -1,0 +1,73 @@
+@use 'base/index' as *
+
+.news
+	@media( max-width: 1400px)
+		padding-top: 73px
+	@media( max-width: 576px)
+		padding-top: 0
+	&__wrapper
+		margin-top: 73px
+		@include flexHorisontalCenter(space-between)
+		@media( max-width: 1200px)
+			flex-direction: column
+			align-items: center
+			gap: 64px
+		@media( max-width: 576px)
+			margin-top: 64px
+		@media( max-width: 480px)
+			margin-top: 48px
+			gap: 48px
+		@media( max-width: 425px)
+			margin-top: 32px
+			gap: 32px
+		@media( max-width: 375px)
+			margin-top: 10px
+	&__item
+		width: 49.042%
+		border: 1px solid $mainBorder
+		border-radius: 50px
+		min-height: 880px
+		@media( max-width: 1200px)
+			width: 65%
+			min-height: auto
+		@media( max-width: 991px)
+			width: 75%
+		@media( max-width: 768px)
+			width: 95%
+		@media( max-width: 576px)
+			border-radius: 20px
+			border: 0.40px solid $mainBorder
+	&__img
+		height: 400px
+		img
+			border-radius: 50px 50px 0 0
+			@media( max-width: 576px)
+				border-radius: 20px 20px 0 0
+	&__descriptions
+		margin-top: -110px
+		padding: 35px
+		display: grid
+		gap: 38px
+		@media( max-width: 1400px)
+			gap: 16px
+		@media( max-width: 1200px)
+			gap: 32px
+		@media( max-width: 576px)
+			padding: 24px
+		@media( max-width: 425px)
+			padding: 16px
+			gap: 16px
+		br
+			@media( max-width: 1200px)
+				display: none
+	&__date
+		font-size: 24px
+		color: $secondColor
+		@media( max-width: 1700px)
+			font-size: 22px
+		@media( max-width: 425px)
+			font-size: 16px
+		@media( max-width: 375px)
+			font-size: 14px
+		&__span
+			color: $thirdColor

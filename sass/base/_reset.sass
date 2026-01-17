@@ -1,0 +1,59 @@
+*, *::before, *::after
+	padding: 0
+	margin: 0
+	border: 0
+	box-sizing: border-box
+
+a
+	display: flex
+	text-decoration: none
+	text-decoration-skip-ink: none
+
+table
+	border-collapse: collapse
+
+ol, ul
+	list-style: none
+
+select
+	outline: none
+
+input, textarea
+	font-family: inherit
+	border: none
+	outline: none
+	&::placeholder
+		font-family: inherit
+
+textarea
+	resize: vertical
+
+details summary::-webkit-details-marker,
+details summary::marker
+	display: none
+	list-style: none
+	content: ''
+
+
+button
+	border: none
+	outline: none
+	cursor: pointer
+
+img
+	width: 100%
+	height: 100%
+	border-radius: inherit
+	object-fit: cover
+
+sup
+	font-size: 50%
+
+
+address
+	font-style: normal
+
+
+.container
+	height: inherit
+	min-height: inherit

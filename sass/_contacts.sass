@@ -1,0 +1,92 @@
+@use 'base/index' as *
+
+.contacts
+	padding-top: 191px
+	@media( max-width: 1250px)
+		padding: 100px 0
+	@media( max-width: 576px)
+		padding: 74px 0
+	@media( max-width: 425px)
+		padding-top: 73px
+		padding-bottom: 34px
+	&__wrapper
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		justify-content: space-between
+		@media( max-width: 1250px)
+			grid-template-columns: 1fr
+			place-items: center
+	&__logo
+		width: 310px
+		height: 48px
+		@media( max-width: 425px)
+			justify-self: flex-start
+			width: 197px
+			height: 30px
+		img
+			object-fit: contain
+	&__address
+		margin-top: 90px
+		@media( max-width: 1250px)
+			margin-top: 64px
+		@media( max-width: 576px)
+			margin-top: 48px
+		@media( max-width: 425px)
+			margin-top: 36px
+	&__block__form
+		margin: 60px 0
+		@media( max-width: 1250px)
+			margin: 30px 0
+			width: 50%
+		@media( max-width: 991px)
+			width: 65%
+		@media( max-width: 768px)
+			width: 80%
+		@media( max-width: 576px)
+			width: 100%
+	&__form
+		margin-top: 30px
+		@include flexReverseAxis
+		gap: 30px
+		@media( max-width: 425px)
+			gap: 34px
+	&__input
+		padding: 23px 40px
+		width: 93.723%
+		font-weight: 300
+		font-size: 20px
+		border-radius: 50px
+		color: $secondColor
+		background: transparent
+		backdrop-filter: blur(4px)
+		border: 1px solid $mainBorder
+		@media( max-width: 1250px)
+			width: 100%
+		@media( max-width: 480px)
+			font-size: 16px
+		@media( max-width: 425px)
+			padding: 19.5px
+			font-size: 14px
+		@media( max-width: 375px)
+			font-size: 12px
+		&::placeholder
+			font-weight: 300
+			font-size: 20px
+			color: $secondColor
+			@media( max-width: 480px)
+				font-size: 16px
+			@media( max-width: 425px)
+				font-size: 14px
+			@media( max-width: 375px)
+				font-size: 12px
+	&__copyright
+		display: grid
+		gap: 30px
+		@media( max-width: 1250px)
+			text-align: center
+		@media( max-width: 425px)
+			text-align: left
+	&__link
+		color: $secondColor
+		@media( max-width: 480px)
+			justify-content: center

@@ -1,0 +1,36 @@
+@use 'sass/base/reset'
+@use 'sass/base/index' as *
+
+@use 'sass/global/flex-footer'
+@use 'sass/global/titles'
+@use 'sass/global/text'
+@use 'sass/global/btns'
+
+
+@use 'sass/global/burger-menu'
+@use 'sass/global/header'
+@use 'sass/promo'
+@use 'sass/about'
+@use 'sass/activity'
+@use 'sass/scientific'
+@use 'sass/economics'
+@use 'sass/news'
+@use 'sass/contacts'
+@use 'sass/yandex-map-v2'
+
+
+html
+	scroll-behavior: smooth
+
+
+body
+	font-family: $mainFont
+	background: $mainBg
+	color: $mainColor
+	&.overflow
+		overflow: hidden
+
+.container
+	max-width: 1700px
+	padding: 0 15px
+	margin: 0 auto

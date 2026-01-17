@@ -1,0 +1,36 @@
+@use 'base/index' as *
+
+.promo
+	min-height: 747px
+	@include doubleBackgroundImg('img/promo-bg.png', contain, 'img/promo-bg-2.png')
+	background-position: right
+	@media( max-width: 991px)
+		background-size: cover
+		background-position: center
+	@media( max-width: 576px)
+		padding: 30px 0
+		min-height: 705px
+		@include doubleBackgroundImg('img/promo-bg-2-mobile.png', contain, 'img/promo-bg.png')
+		background-position: bottom
+	&__wrapper
+		min-height: inherit
+	&__wrapper
+		@include flexReverseAxis
+		justify-content: center
+	&__info
+		width: 75%
+		@media( max-width: 1200px)
+			width: 100%
+		@media( max-width: 576px)
+			display: grid
+			gap: 36px
+	&__block__btns
+		@include flexCenter(flex-start)
+		gap: 30px
+		margin-top: 134px
+		@media( max-width: 576px)
+			width: 310px
+			margin-top: 71px
+			flex-direction: column
+		@media( max-width: 425px)
+			width: 212px

@@ -1,0 +1,86 @@
+@use 'base/index' as *
+
+.economics
+	padding-top: 84px
+	@include background('img/economics-bg.png')
+	@media( max-width: 480px)
+		padding-top: 48px
+	@media( max-width: 425px)
+		@include background('img/economics-bg-mobile.png')
+	@media( max-width: 375px)
+		min-height: 520px
+	&__title
+		@media( max-width: 425px)
+			width: 75%
+	&__wrapper
+		margin-top: 95px
+		@media( max-width: 576px)
+			margin-top: 64px
+		@media( max-width: 480px)
+			margin-top: 48px
+	&__wrapper, &__item
+		@include flexCenter(space-between)
+		@media( max-width: 1400px)
+			flex-direction: column
+			gap: 48px
+		@media( max-width: 576px)
+			gap: 32px
+	&__item
+		@media( max-width: 425px)
+			gap: 18px
+	&__item, &__left
+		width: 48%
+		@media( max-width: 1400px)
+			width: 95%
+	&__left, &__right
+		@include flexCenter
+		gap: 24px
+		@media( max-width: 1700px)
+			gap: 16px
+		@media( max-width: 1400px)
+			width: 50%!important
+			justify-content: space-evenly
+		@media( max-width: 991px)
+			width: 60%!important
+		@media( max-width: 768px)
+			width: 70%!important
+		@media( max-width: 576px)
+			width: 80%!important
+		@media( max-width: 480px)
+			width: 95%!important
+			gap: 30px
+		@media( max-width: 425px)
+			width: 100%!important
+	&__right
+		width: 47.281%
+		border-radius: 25px
+		padding: 30px 33px 30px 30px
+		background: $itemsBg
+		@media( max-width: 576px)
+			padding: 16px
+		@media( max-width: 425px)
+			padding: 10px
+		@media( max-width: 375px)
+			padding: 5px 25px
+		&_right
+			width: 38.175%
+	&__img
+		width: 115px
+		height: 115px
+		@media( max-width: 768px)
+			width: 100px
+			height: 100px
+		@media( max-width: 576px)
+			width: 85px
+			height: 85px
+		@media( max-width: 480px)
+			width: 65px
+			height: 65px
+			flex-shrink: 0
+		img
+			object-fit: contain
+	&__descriptions
+		@media( max-width: 1400px)
+			width: 70%
+	&__text
+		margin-top: 8px

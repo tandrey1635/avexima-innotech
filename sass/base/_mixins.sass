@@ -1,0 +1,81 @@
+@mixin flexCenter($justifyContent: center, $alignItems: center)
+	display: flex
+	justify-content: $justifyContent
+	align-items: $alignItems
+
+@mixin flexHorisontalCenter($justifyContent: center)
+	display: flex
+	justify-content: $justifyContent
+
+@mixin flexVerticalCenter($alignItems: center)
+	display: flex
+	align-items: $alignItems
+
+@mixin flexReverseAxis($flexDirection: column)
+	display: flex
+	flex-direction: $flexDirection
+
+/* Прижать подвал Грид */
+@mixin gridFooter
+	display: grid
+	grid-template-rows: auto 1fr
+
+@mixin background($background, $size: cover)
+	background: url($background) no-repeat center / $size
+
+@mixin doubleBackground($background, $size: cover, $bgColor: none)
+	background: url($background) no-repeat center / $size, $bgColor
+
+@mixin doubleBackgroundImg($background-one, $size-one: cover, $background-two, $size-two: cover)
+	background: url($background-one) no-repeat center / $size-one, url($background-two) no-repeat center /$size-two
+
+@mixin before($top: 0, $left: 0)
+	display: flex
+	position: absolute
+	content: ''
+	top: $top
+	left: $left
+
+@mixin after($top: 0, $right: 0)
+	display: flex
+	position: absolute
+	content: ''
+	top: $top
+	right: $right
+
+@mixin universalBeforeAfter($top: unset, $left: unset, $bottom: unset, $right: unset)
+	display: flex
+	position: absolute
+	content: ''
+	top: $top
+	left: $left
+	bottom: $bottom
+	right: $right
+
+
+@mixin fixed($top: 0, $left: 0)
+	position: absolute
+	top: $top
+	left: $left
+
+@mixin absolute($top: 0, $left: 0)
+	position: absolute
+	top: $top
+	left: $left
+
+@mixin absoluteRight($top: 0, $right: 0)
+	position: absolute
+	top: $top
+	right: $right
+
+@mixin absoluteBottomRight($bottom: 0, $right: 0)
+	position: absolute
+	bottom: $bottom
+	right: $right
+
+/* Выяснить где нужен rotate */
+@mixin absoluteCenter($top: 0, $left: 50%, $transformX: -50%, $rotate: 0)
+	position: absolute
+	top: $top
+	left: $left
+	transform: translateX($transformX) rotate($rotate)

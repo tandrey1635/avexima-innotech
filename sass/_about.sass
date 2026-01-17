@@ -1,0 +1,110 @@
+@use 'base/index' as *
+
+.about
+	padding: 96px 0
+	background: $secondBg
+	@media( max-width: 425px)
+		padding: 50px 0
+	&__wrapper, &__company, &__partners
+		margin-top: 75px
+		@include flexCenter(space-between)
+		@media( max-width: 1200px)
+			flex-direction: column
+			align-items: center
+			gap: 30px
+		@media( max-width: 576px)
+			margin-top: 64px
+		@media( max-width: 480px)
+			margin-top: 48px
+		@media( max-width: 425px)
+			margin-top: 30px
+	&__wrapper
+		@media( max-width: 425px)
+			margin-top: 20px
+	&__left
+		width: 63.354%
+		@media( max-width: 1200px)
+			width: 50%
+		@media( max-width: 991px)
+			width: 65%
+		@media( max-width: 768px)
+			width: 80%
+		@media( max-width: 576px)
+			width: 100%
+	&__right
+		display: grid
+		gap: 33px
+		padding: 72px 66px
+		border-radius: 50px
+		width: 30.3%
+		min-height: 394px
+		background: $itemsBg
+		@media( max-width: 1400px)
+			width: 35%
+		@media( max-width: 1200px)
+			width: 50%
+		@media( max-width: 991px)
+			width: 65%
+		@media( max-width: 768px)
+			width: 80%
+		@media( max-width: 576px)
+			width: 100%
+			min-height: auto
+			padding: 33px 36px
+			gap: 25px
+	&__item
+		@include flexCenter
+		gap: 16px
+		&__left
+			width: 35%
+		&__right
+			width: 50%
+			@media( max-width: 1200px)
+				width: 80%
+	&__menu
+		list-style: disc
+		margin-top: 42px
+		padding-left: 30px
+	&__list
+		font-size: 20px
+		line-height: 140%
+		@media( max-width: 1700px)
+			font-size: 18px
+		@media( max-width: 425px)
+			font-size: 16px
+		@media( max-width: 375px)
+			font-size: 14px
+	&__text
+		margin-top: 32px
+	&__company
+		&__item
+			display: grid
+			gap: 10px
+			width: 30%
+			@media( max-width: 1200px)
+				width: 50%
+			@media( max-width: 991px)
+				width: 65%
+			@media( max-width: 576px)
+				width: 80%
+			@media( max-width: 576px)
+				width: 100%
+	&__partners
+		@media( max-width: 425px)
+			align-items: baseline
+		&__item
+			max-width: 25%
+			height: 117px
+			@media( max-width: 1200px)
+				max-width: 50%
+			@media( max-width: 991px)
+				max-width: 65%
+			@media( max-width: 768px)
+				max-width: 80%
+			@media( max-width: 576px)
+				max-width: 100%
+			img
+				object-fit: contain
+	br
+		@media( max-width: 1200px)
+			display: none

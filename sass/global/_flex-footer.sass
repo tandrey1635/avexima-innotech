@@ -1,0 +1,20 @@
+@use '../base/index' as *
+
+/* Прижать подвал flex */
+.wrapper
+	@include flexReverseAxis
+	min-height: 100vh
+	overflow-x: initial
+
+header, footer
+	background: $mainBg
+	min-height: 100px
+
+main
+	flex: 1 0 auto
+
+section
+	min-height: 600px
+
+footer
+	flex: 0 0 auto
