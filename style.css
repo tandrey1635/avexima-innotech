@@ -361,8 +361,7 @@ footer {
   color: #fff;
   border-radius: 50px;
   background: linear-gradient(3deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   border: 1px solid rgba(219, 236, 255, 0.3019607843);
 }
 @media (max-width: 480px) {
@@ -895,8 +894,7 @@ footer {
   min-height: 222px;
   border-radius: 50px;
   background: linear-gradient(3deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   border: 1px solid rgba(219, 236, 255, 0.3019607843);
 }
 @media (max-width: 1400px) {
@@ -1041,8 +1039,7 @@ footer {
   border-radius: 50px;
   border: 1px solid rgba(219, 236, 255, 0.3019607843);
   box-shadow: 0 7px 13px 0 rgba(209, 214, 226, 0.3019607843);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   border: 1px solid #002a59;
   background: linear-gradient(0deg, rgba(219, 236, 255, 0.3) 0%, rgba(219, 236, 255, 0.05) 100%);
 }
@@ -1747,8 +1744,7 @@ footer {
   border-radius: 50px;
   color: #fff;
   background: transparent;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   border: 1px solid rgba(219, 236, 255, 0.3019607843);
 }
 @media (max-width: 1250px) {
